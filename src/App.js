@@ -8,7 +8,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Hello BootCamp 4!</Text>
+        <Text style={styles.introText}>Good Morning BootCamp 4!</Text>
       </View>
     );
   }
@@ -20,5 +20,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  introText: {
+    color: 'red',
   },
 });
