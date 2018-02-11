@@ -16,6 +16,9 @@ const tabs = TabNavigator(
     Tab3: {screen: LogOut},
   },
   {
+    tabBarOptions: {
+      activeTintColor: 'tomato',
+    },
     order: ['Tab1', 'Tab2', 'Tab3'],
     animationEnabled: true,
   },
@@ -23,8 +26,20 @@ const tabs = TabNavigator(
 
 export default StackNavigator(
   {
-    Login: {screen: Login},
-    Main: {screen: tabs},
+    Login: {
+      screen: Login,
+      navigationOptions: {
+        gesturesEnabled: false,
+        headerLeft: null,
+      },
+    },
+    Main: {
+      screen: tabs,
+      navigationOptions: {
+        gesturesEnabled: false,
+        headerLeft: null,
+      },
+    },
     Detail: {screen: Detail},
     NameDisplay: {screen: NameDisplay},
   },

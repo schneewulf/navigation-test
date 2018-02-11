@@ -12,10 +12,6 @@ type State = {};
 
 export default class App extends Component<Props, State> {
   render() {
-    return (
-      <View style={styles.container}>
-        <Route />
-      </View>
-    );
+    return <Route />;
   }
 }
