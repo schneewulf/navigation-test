@@ -1,27 +1,21 @@
 // @flow
+
 import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {View} from 'react-native';
+
+import styles from './style/Styles';
+import Route from './Route';
 
 type Props = {};
 
-export default class App extends Component<Props> {
+type State = {};
+
+export default class App extends Component<Props, State> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.introText}>Good Morning BootCamp 4!</Text>
+        <Route />
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  introText: {
-    color: 'red',
-  },
-});
